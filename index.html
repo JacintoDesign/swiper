@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <title>Codepen Swiper</title>
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css"> 
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <section id="swiped">
+    <!-- Slider main container -->
+    <div class="swiper-container">
+     <!-- Additional required wrapper -->
+     <div class="swiper-wrapper">
+         
+         <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="text-block">
+              <h3>Brainwave</h3>
+              <p>Clickable restart on this project that reminds me of a brainwave.</p>
+            </div>
+            <a href="http://jacinto.design/brainwave">
+              <img src="img/brainicon.png" alt="Brainwave">              
+            </a>
+          </div>      
+          <div class="swiper-slide">
+            <div class="text-block">
+                <h3>Neon Sunrise</h3>
+                <p>This 3D render of a glowing moon and the purple terrain of an asteroid.</p>
+              </div>
+              <a href="http://jacinto.design/neon">
+                <img src="img/neonicon.png" alt="Neon Sunrise">              
+              </a>  
+            </div>
+          <div class="swiper-slide">
+            <div class="text-block">
+                <h3>Don't Go Away</h3>
+                <p>Wherever you click or drag the red dot will go, and it will repel everything.</p>
+              </div>
+              <a href="http://jacinto.design/repelled">
+                <img src="img/repelledicon.png" alt="Repelled">              
+              </a>
+            </div>
+          <div class="swiper-slide">
+            <div class="text-block">
+                <h3>SVG Gradient Tool</h3>
+                <p>This tool allows you to create infinite patterns, try the randomize function.</p>
+              </div>
+              <a href="http://jacinto.design/svg">
+                <img src="img/svgicon.png" alt="SVG Gradient Tool">              
+              </a>
+            </div>
+          <div class="swiper-slide">
+            <div class="text-block">
+                <h3>Mountains</h3>
+                <p>A 3D render of a landscape with alterable light and terrain.</p>
+              </div>
+              <a href="http://jacinto.design/mountains">
+                <img src="img/mountainicon.png" alt="Mountains">              
+              </a>
+            </div>                          
+          </div>   
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  
+      <!-- Swiper Script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.esm.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.esm.bundle.js"></script>
+      <script src="path/to/swiper.min.js"></script>
+  
+      <script>
+              var mySwiper = new Swiper ('.swiper-container', {
+                // Optional parameters
+                speed: 400,
+                spaceBetween: 100,
+                direction: 'horizontal',
+                loop: true,
+                
+                keyboard: {
+                  enabled: true,
+                  onlyInViewport: false,
+                },
+                centeredSlides: true,
+                slidesPerView: 1,
+                initialSlide: 1,
+                lazyLoading: true,
+                lazyLoadingInPrevNext: true,
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 250,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+            
+                // Navigation arrows
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              })
+      </script>  
+    
+</body>
+</html>
